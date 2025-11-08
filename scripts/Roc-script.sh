@@ -54,7 +54,7 @@ rm -rf feeds/packages/net/open-app-filter
 rm -rf feeds/packages/net/adguardhome
 rm -rf feeds/packages/net/ariang
 rm -rf feeds/packages/net/frp
-rm -rf feeds/packages/lang/golang
+# rm -rf feeds/packages/lang/golang
 rm -rf tools/cmake
 
 # Git稀疏克隆，只克隆指定目录到本地
@@ -68,7 +68,7 @@ function git_sparse_clone() {
 }
 
 # Go & OpenList & cmake & ariang & frp & AdGuardHome & WolPlus & Lucky & wechatpush & OpenAppFilter & 集客无线AC控制器 & 雅典娜LED控制
-git clone --depth=1 https://github.com/sbwml/packages_lang_golang feeds/packages/lang/golang
+# git clone --depth=1 https://github.com/sbwml/packages_lang_golang feeds/packages/lang/golang
 git clone --depth=1 https://github.com/sbwml/luci-app-openlist2 package/openlist
 git_sparse_clone 6.12.55 https://github.com/LiBwrt/openwrt-6.x tools/cmake
 mv -f package/cmake tools/cmake
