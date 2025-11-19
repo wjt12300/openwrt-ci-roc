@@ -1,7 +1,7 @@
 # 修改默认IP & 固件名称 & 编译署名
 sed -i 's/192.168.1.1/192.168.2.1/g' package/base-files/files/bin/config_generate
-sed -i "s/hostname='.*'/hostname='Roc'/g" package/base-files/files/bin/config_generate
-sed -i "s/(\(luciversion || ''\))/(\1) + (' \/ Built by Roc')/g" feeds/luci/modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/10_system.js
+sed -i "s/hostname='.*'/hostname='LibWrt'/g" package/base-files/files/bin/config_generate
+sed -i "s/(\(luciversion || ''\))/(\1) + (' \/ Built by wjt12300')/g" feeds/luci/modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/10_system.js
 
 # 删除luci-app-attendedsysupgrade在概览页面的升级提示
 rm -rf feeds/luci/applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/status/include/11_upgrades.js
